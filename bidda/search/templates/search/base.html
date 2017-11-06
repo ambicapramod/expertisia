@@ -1,0 +1,27 @@
+{% load staticfiles %}
+<html>
+    <head>
+    	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
+   	<link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
+   	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel = 'stylesheet'>
+	<link rel="stylesheet"  href="{% static 'css/search.css' %}">
+    <link rel="stylesheet" href="{% static 'css/hh.css' %}">
+    <link rel = "stylesheet" href="{%static 'css/pk.css'%}">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <title>Expertisia | Job Portal |</title>
+    </head>
+    <body >
+             
+        <h1 class="section-header"><span class="content-header wow fadeIn " data-wow-delay="0.1s" data-wow-duration="1s" style='font-size:1.5cm; padding-left:1.5cm'><a href="/">Expertisia</a></span></h1>
+           
+       
+      
+            {% block content %}
+            {% endblock %}
+    </body>
+</html>

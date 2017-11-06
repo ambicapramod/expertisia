@@ -1,0 +1,45 @@
+{% extends 'search/base.html' %}
+
+    {% include 'search/base/css.html' %}
+    {% include 'search/base/bootstrap_defaults.html' %}
+{% block content %}
+<body>
+		<h1> search results... 	</h1>
+	
+
+	 {% include 'search/base/js.html' %}
+	    <script>
+    $(document).ready(function(){
+      {% block jquery %}{% endblock %}
+    })
+    </script>
+	<div align="right" style="border:1px solid black">
+	{% include 'search/charts.html' %}
+</div>
+	{% for job in job_list %}
+<div class="container">
+
+	<div class="col-md-9 col-md-pull-3">
+	
+        <section class="search-result-item">
+            
+            <div class="search-result-item-body">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <h4 class="search-result-item-heading"><a href="#">{{job.title}}</a></h4>
+                        <p class="info">{{job.location}}</p>
+                    </div>
+                    <div class="col-sm-3 text-align-center">
+                    <a class="btn btn-primary btn-info btn-sm" href="{{job.link}}">Apply Here</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+    </div>
+</div>
+{% endfor %}
+
+</body>
+{% endblock %}
