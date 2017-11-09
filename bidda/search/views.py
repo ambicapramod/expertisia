@@ -102,6 +102,7 @@ def search_query(request):
 		# Fixed url for job posting containing data scientist
 		# read the website 
 
+		# Scrapping begins here !!!
 		assembeled_request= urllib.request.Request(url)
 		result = urllib.request.urlopen(assembeled_request)
 		source = result.read()
